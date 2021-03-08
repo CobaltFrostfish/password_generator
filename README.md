@@ -16,4 +16,4 @@ In this project I was tasked with taking an existing HTML document styled with C
 * JavaScript
 
 ## The final production:
-![Password Generator](./assets/passgen-screenshot.png)
+![Password Generator](./Assets/passgen-screenshot.png)
