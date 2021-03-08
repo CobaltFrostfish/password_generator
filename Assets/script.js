@@ -8,7 +8,13 @@ var upperChar = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var lowerChar = 'abcdefghijklmnopqrstuvwxyz';
 
 function getPasswordOptions() {
-  var length = prompt("Choose a password length between 8 and 128 characters.")
+  var length = parseInt(prompt('password must between at least 8 and 128 characters'));
+  if (isNaN(length) || length < 8 || length > 128) {
+    //alert if not enough characters
+  window.alert('Try Again. Length must be betweeen 8 and 128 characters!')   
+  return;
+  } 
+
   var numOption = confirm("Click OK if you'd like to include numerics, otherwise click cancel.") 
   var upperOption = confirm("Click OK if you'd like to include uppercase letters, otherwise click cancel.")
   var lowerOption = confirm("Click OK if you'd like to include lowercase letters, otherwise click cancel.")
